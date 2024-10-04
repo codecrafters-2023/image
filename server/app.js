@@ -14,7 +14,9 @@ app.use(cors())
 app.use(router);
 
 app.use("/uploads",express.static("./uploads"));
-
+app.get('/', (req, res) => {
+    return res.json({ message: "Sucessfully" })
+} )
 
 app.listen(port,()=>{
     console.log(`server start at port no ${port}`)
