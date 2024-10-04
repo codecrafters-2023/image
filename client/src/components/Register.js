@@ -36,7 +36,7 @@ const Register = () => {
       }
     }
 
-    const res = await axios.post("/register", formData, config);
+    const res = await axios.post("https://image-0qwp.onrender.com/register", formData, config);
 
     if (res.data.status === 401 || !res.data) {
       console.log("errror")
