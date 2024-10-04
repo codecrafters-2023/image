@@ -66,7 +66,7 @@ const Home = () => {
                             return (
                                 <>
                                     <Card style={{ width: '22rem', height: "18rem" }} className="mb-3">
-                                        <Card.Img variant="top" style={{ width: "100px", textAlign: "center", margin: "auto" }} src={`/uploads/${el.imgpath}`} className='mt-2' />
+                                        <Card.Img variant="top" style={{ width: "100px", textAlign: "center", margin: "auto" }} src={`https://image-0qwp.onrender.com/uploads/${el.imgpath}`} className='mt-2' />
                                         <Card.Body className='text-center'>
                                             <Card.Title>User Name : {el.fname}</Card.Title>
                                             <Card.Text>
