@@ -14,7 +14,7 @@ const Home = () => {
     const [show, setShow] = useState(false);
 
     const getUserData = async () => {
-        const res = await axios.get("/getdata", {
+        const res = await axios.get("https://image-0qwp.onrender.com/getdata", {
             headers: {
                 "Content-Type": "application/json"
             }
@@ -29,7 +29,7 @@ const Home = () => {
     }
 
     const dltUser = async (id) => {
-        const res = await axios.delete(`/${id}`, {
+        const res = await axios.delete(`https://image-0qwp.onrender.com/${id}`, {
             headers: {
                 "Content-Type": "application/json"
             }
